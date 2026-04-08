@@ -1,8 +1,12 @@
-import React from 'react'
+import { MiProvider } from './Context';
 
 function App() {
   return (
-    <div> ¿?! </div>
+    <MiProvider>
+      <>
+        <div> Counteer </div>
+      </>
+    </MiProvider>
   )
 }
 
