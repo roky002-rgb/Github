@@ -1,13 +1,15 @@
-import { MiProvider } from './Context';
+import { useMiContexto } from './Context';
 
 function App() {
+  const { contador, incrementar } = useMiContexto();
+  
   return (
     <MiProvider>
       <>
-        <div> Counteer </div>
+        <div>Contador: {contador}</div>
+        <button onClick={incrementar}>Incrementar</button>
       </>
     </MiProvider>
-  )
+  );
 }
-
-export default App
+export default App 
